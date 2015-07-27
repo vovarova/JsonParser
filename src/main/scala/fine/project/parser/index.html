@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html class=" x-viewport">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <title>Operations-Guide </title>
+    <!-- STYLES --><!--Note: the order is important-->
+    
+    
+    
+    <!--uncomment this line to change the theme/color to gray-->
+    <!--<link rel="stylesheet" type="text/css" href="extjs/resources/css/xtheme-gray.css" />-->
+    <!--EXTJS LIBS -->
+    
+    
+    <!--Main application-->
+    
+    <!--Start application-->
+    
+
+<link rel="stylesheet" type="text/css" href="index.css" media="all">
+</head>
+<body style="position: relative;" id="ext-gen9" class="  ext-gecko ext-gecko2 x-border-layout-ct"><div style="left: 253px; top: 80px; width: 1667px;" id="content-panel" class="x-panel x-border-panel"><div style="-moz-user-select: none;" id="ext-gen17" class="x-panel-header x-unselectable"><span id="ext-gen21" class="x-panel-header-text"><a id="ext-gen414" class="breadcrumb" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#application_types_ops" topicid="33">My Application Types</a>&nbsp;&gt;&nbsp;<span class="breadcrumb">Discovery&nbsp;</span></span></div><div id="ext-gen18" class="x-panel-bwrap"><div style="width: 1665px; height: 831px;" id="ext-gen19" class="x-panel-body"><div style="width: 1665px;" id="ext-comp-1004" class="x-panel x-panel-noborder"><div id="ext-gen22" class="x-panel-bwrap"><div style="overflow: auto; width: 1665px; height: 831px;" id="ext-gen23" class="x-panel-body x-panel-body-noheader x-panel-body-noborder"><table id="topic-content" style="height: 100%; width: 100%;" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+            <td style="height: 100%; vertical-align: top;">
+                <!--start-panel-->
+                <div id="start-panel">
+
+
+
+    <title> <span class="searchword1">Discovery</span> </title>
+    
+
+
+<h2 class="heading2"><span class="searchword1">Discovery</span></h2>
+<p class="bodytext">The <span class="searchword1">discovery</span> process in Studio searches a web application's login page for the fields used to enter login credentials (typically a username and password). The information is retrieved from the page so that form-stuffing can be used to log users into the web application. </p>
+<p class="numberheadingfirst">Before You Begin</p>
+<p class="bodytext">Make sure that you have the following: </p>
+<ul class="listbullet"><li class="listbullet">The URL of the application upon which the <span class="searchword1">discovery</span> process is going to be performed</li><li class="listbullet">The name of the company for which the <span class="searchword1">discovery</span> process is being run <p class="numberheadingfirst">Enter the Web Application URL</p>
+</li></ul><ol class="llistnumber"><li class="llistnumber">Click the <strong class="menuoptions">Application Types</strong> link. This displays the <em class="emphasis">My Application Types</em> page, which lists the types of applications Studio can configure for your system.<p class="listcontinue"><img src="911.png" alt="Applcation Types page" align="bottom" height="326.7" hspace="0" border="0" vspace="0" width="530.75"></p>
+</li><li class="llistnumber">Complete the following fields at the top of the page:<p class="listcontinue"><img src="3066.png" alt="Discovery" align="bottom" height="26.95" hspace="0" border="0" vspace="0" width="363.55"></p>
+<ul class="numberedbullet"><li class="numberedbullet"><strong class="specialbold"><span class="searchword1">Discovery</span> </strong>- Use the drop-down list to select the customer for whom the <span class="searchword1">discovery</span> is taking place.</li><li class="numberedbullet"><strong class="specialbold">Login Form URL - </strong>Enter the URL of the web application for which Studio will detect the login fields.</li></ul></li><li class="llistnumber">Click <strong class="buttons">Discover</strong><strong class="specialbold"> </strong>to scan the Login Form URL. <p class="listcontinue">The <span class="searchword1">discovery</span> process may take a substantial amount of time (e.g., two minutes or more). The<em class="emphasis"> Edit Authentication Config</em><strong class="specialbold"> </strong>dialog appears when the login information is found.</p>
+<p class="listcontinue"><img src="1417.png" alt="Edit Authentication Config" align="bottom" height="304.15" hspace="0" border="0" vspace="0" width="348.15"></p>
+<p class="numberheadingfirst">Authentication Configuration Information</p>
+</li><li class="llistnumber">Complete the following fields:<ul class="numberedbullet"><li class="numberedbullet"><strong class="specialbold">Name </strong>- Enter a name for the application type. The name entered in this field appears on the <em class="emphasis">Applications </em>page in the Studio GUI.</li><li class="numberedbullet"><strong class="specialbold">Login URL</strong> - Enter the URL containing the login fields.</li><li class="numberedbullet"><strong class="specialbold">Customer </strong>- This field is automatically populated with the customer selected on the <em class="emphasis">My Application Type</em>s page.</li></ul><p class="numberheadingfirst">Failure Detection</p>
+</li><li class="llistnumber">Complete the following fields:<ul class="numberedbullet"><li class="numberedbullet">Use the drop-down list to select a failure-detection type. This type tells Studio what to look for when it checks for login success:<ul class="numberbullet2"><li class="numberbullet2"><strong class="specialbold">VISIBLE_TEXT</strong> - Studio looks for contents in the VISIBLE_TEXT field to determine that a login failure has occurred.</li><li class="numberbullet2"><strong class="specialbold">URL </strong>- Studio looks for the URL entered in this field (for example, an error page).</li><li class="numberbullet2"><strong class="specialbold">STATUS </strong>- Studio looks for a status. </li></ul></li><li class="numberedbullet">Use the drop-down list to select the qualifier for the contents of this message from the drop-down list.</li><li class="numberedbullet">Enter a value for the fields, if needed.</li></ul><p class="numberheadingfirst">Forms</p>
+</li><li class="llistnumber">Click the <strong class="menuoptions">Forms</strong><strong class="specialbold"> </strong>tab. This displays the <em class="emphasis">Forms</em> fields.<p class="listcontinue"><img src="1466.png" alt="Edit Authentication Config - Forms Tab" align="bottom" height="304.15" hspace="0" border="0" vspace="0" width="348.15"></p>
+</li><li class="llistnumber">Select the URL of the login form from the <strong class="menuoptions">Login Form</strong> drop-down list.</li><li class="llistnumber">If necessary, delete the fields that are not needed for this form by clicking the <strong class="buttons">Delete </strong><img src="442.png" alt="Delete Button" align="bottom" height="19" hspace="0" border="0" vspace="0" width="22"> icon next to the fields that are not needed.</li><li class="llistnumber">Click <strong class="buttons">Save</strong>.</li></ol><table class="relatedtopics belowtopictext" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr valign="top">
+<td width="227">
+<h3 class="relatedheading">In This Section</h3><p class="relateditem"><a id="ext-gen416" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#custom_forms_ops" target="_self">Add a Custom Form</a></p></td>
+<td width="227">
+<h3 class="relatedheading">See Also</h3><p class="relateditem"><a id="ext-gen418" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#application_types_ops" target="_self">My Application Types</a></p><p class="relateditem"><a id="ext-gen420" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#httpbasic_ops" target="_self">HTTP Basic Configuration</a></p><p class="relateditem"><a id="ext-gen422" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#httpdigest_ops" target="_self">HTTP Digest Configuration</a></p></td>
+</tr>
+</tbody></table>
+
+
+<input id="topicId" value="369" type="hidden">
+<input id="topicDescription" value="Discovery" type="hidden">
+<input id="footer-modified" value="Last modified: 10/31/2012 10:46:32 AM" type="hidden">
+
+
+</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="topOfPage">
+                <div id="topOfPage"><a onclick="Kbase._topOfPage()">Top of Page</a></div>
+            </td>
+        </tr>
+        <tr>
+            <!--footer-->
+            <td id="footer">
+                <table class="footer">
+                    <tbody><tr>
+                        <td align="left">
+                            &nbsp;
+                        </td>
+                        <td align="center">
+
+                        </td>
+                        <td align="right">
+                            <a href="http://www.symplified.com/" target="_top">
+                            <img src="logo-symplified-color.png" alt="http://www.symplified.com" height="39" hspace="12" width="130">                            </a>                        </td>
+                  </tr>
+                </tbody></table>
+            </td>
+        </tr>
+    </tbody></table></div></div></div></div></div></div><div style="left: 0px; top: 0px; width: 1920px;" id="north-panel" class="x-panel x-border-panel x-panel-noborder"><div id="ext-gen24" class="x-panel-bwrap"><div style="height: 80px; width: 1920px;" id="ext-gen25" class="x-panel-body x-panel-body-noheader x-panel-body-noborder"><div style="height: 35px;" id="header">
+        <div style="float: right;">
+            <span id="headerTitle">
+                Customer Help
+            </span>
+        </div>
+        <div style="float: left;"><img src="symplified_white_logo_trans_130x39.png" 672.png"="" height="39" hspace="0" vspace="0" width="130"></div>
+</div><div id="mainToolbar" class="x-toolbar x-small-editor x-small-editor-no-bg-image"><table cellspacing="0"><tbody><tr><td><div id="ext-gen56" class="ytb-spacer"></div></td><td><div id="ext-gen57" class="ytb-spacer"></div></td><td id="ext-gen58"><table style="width: auto;" id="ext-comp-1005" class="x-btn-wrap x-btn x-btn-icon " border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="x-btn-left"><i>&nbsp;</i></td><td class="x-btn-center"><em unselectable="on"><button title="Home" id="ext-gen60" class="x-btn-text homeIcon" type="button">&nbsp;</button></em></td><td class="x-btn-right"><i>&nbsp;</i></td></tr></tbody></table></td><td><div id="ext-gen66" class="ytb-spacer"></div></td><td><div id="ext-gen67" class="ytb-spacer"></div></td><td id="ext-gen68"><table style="width: auto;" id="ext-comp-1006" class="x-btn-wrap x-btn x-btn-icon " border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="x-btn-left"><i>&nbsp;</i></td><td class="x-btn-center"><em unselectable="on"><button title="Previous" id="ext-gen70" class="x-btn-text upIcon" type="button">&nbsp;</button></em></td><td class="x-btn-right"><i>&nbsp;</i></td></tr></tbody></table></td><td><div id="ext-gen76" class="ytb-spacer"></div></td><td><div id="ext-gen77" class="ytb-spacer"></div></td><td id="ext-gen78"><table style="width: auto;" id="ext-comp-1007" class="x-btn-wrap x-btn x-btn-icon " border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="x-btn-left"><i>&nbsp;</i></td><td class="x-btn-center"><em unselectable="on"><button title="Next" id="ext-gen80" class="x-btn-text downIcon" type="button">&nbsp;</button></em></td><td class="x-btn-right"><i>&nbsp;</i></td></tr></tbody></table></td><td style="width: 100%;"><div id="ext-gen86" class="ytb-spacer"></div></td><td class=" x-hide-display" id="ext-gen87"><table style="width: auto;" id="ext-comp-1008" class="x-btn-wrap x-btn x-btn-icon" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="x-btn-left"><i>&nbsp;</i></td><td class="x-btn-center"><em unselectable="on"><button title="Edit in Author-it" id="ext-gen89" class="x-btn-text EditIcon" type="button">&nbsp;</button></em></td><td class="x-btn-right"><i>&nbsp;</i></td></tr></tbody></table></td><td><div id="ext-gen95" class="ytb-spacer"></div></td><td><div id="ext-gen96" class="ytb-spacer"></div></td><td class=" x-hide-display" id="ext-gen97"><table style="width: auto;" id="ext-comp-1009" class="x-btn-wrap x-btn x-btn-icon" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="x-btn-left"><i>&nbsp;</i></td><td class="x-btn-center"><em unselectable="on"><button title="Edit in Author-it Live" id="ext-gen99" class="x-btn-text EditLiveIcon" type="button">&nbsp;</button></em></td><td class="x-btn-right"><i>&nbsp;</i></td></tr></tbody></table></td><td><div id="ext-gen105" class="ytb-spacer"></div></td><td><div id="ext-gen106" class="ytb-spacer"></div></td><td class=" x-hide-display" id="ext-gen107"><table style="width: auto;" id="ext-comp-1010" class="x-btn-wrap x-btn x-btn-icon" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="x-btn-left"><i>&nbsp;</i></td><td class="x-btn-center"><em unselectable="on"><button title="Email this page" id="ext-gen109" class="x-btn-text emailThisPageIcon" type="button">&nbsp;</button></em></td><td class="x-btn-right"><i>&nbsp;</i></td></tr></tbody></table></td><td><div id="ext-gen115" class="ytb-spacer"></div></td><td><div id="ext-gen116" class="ytb-spacer"></div></td><td class=" x-hide-display" id="ext-gen117"><table style="width: auto;" id="ext-comp-1011" class="x-btn-wrap x-btn x-btn-icon" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="x-btn-left"><i>&nbsp;</i></td><td class="x-btn-center"><em unselectable="on"><button title="Send feedback" id="ext-gen119" class="x-btn-text sendFeedbackIcon" type="button">&nbsp;</button></em></td><td class="x-btn-right"><i>&nbsp;</i></td></tr></tbody></table></td><td><div id="ext-gen125" class="ytb-spacer"></div></td><td><div id="ext-gen126" class="ytb-spacer"></div></td><td class=" x-hide-display" id="ext-gen127"><table style="width: auto;" id="ext-comp-1012" class="x-btn-wrap x-btn x-btn-icon" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="x-btn-left"><i>&nbsp;</i></td><td class="x-btn-center"><em unselectable="on"><button title="Print this page" id="ext-gen129" class="x-btn-text printIcon" type="button">&nbsp;</button></em></td><td class="x-btn-right"><i>&nbsp;</i></td></tr></tbody></table></td><td><div id="ext-gen135" class="ytb-spacer"></div></td><td><div id="ext-gen136" class="ytb-spacer"></div></td><td><div id="ext-gen137" class="ytb-spacer"></div></td><td><div id="ext-gen138" class="ytb-spacer"></div></td><td id="ext-gen139"><input value="Search" style="width: 200px;" class=" x-form-text x-form-field  x-form-empty-field" size="20" autocomplete="off" id="search-textfield" name="search-textfield" type="text"></td><td><div id="ext-gen146" class="ytb-spacer"></div></td><td><div id="ext-gen147" class="ytb-spacer"></div></td><td id="ext-gen148"><table style="width: auto;" id="search-Icon" class="x-btn-wrap x-btn x-btn-icon " border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="x-btn-left"><i>&nbsp;</i></td><td class="x-btn-center"><em unselectable="on"><button title="Search" id="ext-gen150" class="x-btn-text searchIcon" type="button">&nbsp;</button></em></td><td class="x-btn-right"><i>&nbsp;</i></td></tr></tbody></table></td><td><div id="ext-gen156" class="ytb-spacer"></div></td><td><div id="ext-gen157" class="ytb-spacer"></div></td><td><span id="ext-gen158" class="ytb-text"><form action="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm" id="checkBoxForm"><input name="matchPartialWord" onclick="Kbase._setSearchPartialWord()" type="checkbox"><span class="checkbox-text">Match partial words</span></form></span></td><td><div id="ext-gen159" class="ytb-spacer"></div></td><td><div id="ext-gen160" class="ytb-spacer"></div></td><td><div id="ext-gen161" class="ytb-spacer"></div></td></tr></tbody></table></div></div></div></div><div style="width: 250px; left: 0px; top: 80px;" id="westPanelID" class="x-panel x-border-panel"><div style="-moz-user-select: none;" id="ext-gen26" class="x-panel-header x-unselectable"><div id="ext-gen30" class="x-tool x-tool-toggle x-tool-collapse-west ">&nbsp;</div><span id="ext-gen171" class="x-panel-header-text">Contents</span></div><div id="ext-gen27" class="x-panel-bwrap"><div style="width: 248px; height: 831px;" id="ext-gen28" class="x-panel-body"><div style="width: 248px;" id="tab-panel" class="x-tab-panel x-tab-panel-noborder"><div id="ext-gen40" class="x-tab-panel-bwrap"><div style="width: 248px; height: 803px;" id="ext-gen41" class="x-tab-panel-body x-tab-panel-body-noheader x-tab-panel-body-noborder x-tab-panel-body-bottom"><div style="width: 248px;" id="index-panel" class="x-panel x-panel-noborder  x-hide-display"><div id="ext-gen54" class="x-panel-bwrap"><div style="overflow: auto; width: 248px; height: 803px;" id="index" class="x-panel-body x-panel-body-noheader x-panel-body-noborder">
+
+
+
+    <title> Index </title>
+    
+
+
+
+<table class="tableindexatoz" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr valign="top"><td>
+<a name="_top_"></a>
+<p class="indexatoz">
+<a id="ext-gen425" href="#" target="_self">A</a>
+B
+<a id="ext-gen427" href="#" target="_self">C</a>
+<a id="ext-gen429" href="#" target="_self">D</a>
+<a id="ext-gen431" href="#" target="_self">E</a>
+<a id="ext-gen433" href="#" target="_self">F</a>
+G
+<a id="ext-gen435" href="#" target="_self">H</a>
+<a id="ext-gen437" href="#" target="_self">I</a>
+J
+K
+<a id="ext-gen439" href="#" target="_self">L</a>
+<a id="ext-gen441" href="#" target="_self">M</a>
+<a id="ext-gen443" href="#" target="_self">N</a>
+O
+<a id="ext-gen445" href="#" target="_self">P</a>
+Q
+<a id="ext-gen447" href="#" target="_self">R</a>
+<a id="ext-gen449" href="#" target="_self">S</a>
+T
+<a id="ext-gen451" href="#" target="_self">U</a>
+<a id="ext-gen453" href="#" target="_self">V</a>
+<a id="ext-gen455" href="#" target="_self">W</a>
+X
+Y
+Z
+
+</p></td></tr></tbody></table>
+<table class="tableindexlinks" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr valign="top"><td class="indexheading"><a id="A65" name="A65" style="white-space:normal">A</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/about_ami_ops.htm" style="white-space: normal;">About Your AMI</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/ad_federation_services_ops.htm" style="white-space: normal;">Active Directory Federation Services</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/custom_forms_ops.htm" style="white-space: normal;">Add a Custom Form</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/Administrators_ops.htm" style="white-space: normal;">Administrators</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/amazon_ec2_ops.htm" style="white-space: normal;">Amazon EC2 Identity Router Deployment</a></td></tr>
+<tr valign="top"><td class="index1">Audit Logging</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3089.htm" style="white-space: normal;">Audit Logging</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/customers_ops.htm" style="white-space: normal;">Set Up New Customer or Edit Existing Customer</a></td></tr>
+<tr valign="top"><td class="index1">Audit Logging Events</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3089.htm" style="white-space: normal;">Audit Logging</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/2732.htm" style="white-space: normal;">Audit Logging Events</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A67" name="A67" style="white-space:normal">C</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/ca_signed_cert_ops.htm" style="white-space: normal;">CA-signed Certificates</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/code_description_ops.htm" style="white-space: normal;">Code Descriptions</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/config_customer_ops.htm" style="white-space: normal;">Configuration</a></td></tr>
+<tr valign="top"><td class="index1">Configure a Symantec VIP or VIP SSP Strong Authentication Provider</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3240.htm" style="white-space: normal;">Configure a Symantec VIP or VIP SSP Strong Authentication Provider</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/strong_authentication.htm" style="white-space: normal;">Strong Authentication</a></td></tr>
+<tr valign="top"><td class="index1">Configure CRYPTOCard</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3244.htm" style="white-space: normal;">Configure CRYPTOCard</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/strong_authentication.htm" style="white-space: normal;">Strong Authentication</a></td></tr>
+<tr valign="top"><td class="index1">Configure Reauthentication</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3242.htm" style="white-space: normal;">Configure Reauthentication</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/strong_authentication.htm" style="white-space: normal;">Strong Authentication</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/SimpleLink_client.htm" style="white-space: normal;">Configure the SimpleLink Client</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/SimpleLink_server.htm" style="white-space: normal;">Configure the SimpleLink Server</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/config_id_router_ops.htm" style="white-space: normal;">Configuring Identity Routers in Studio</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/config_adfs_server_ops.htm" style="white-space: normal;">Configuring Your ADFS Server</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/application_handlers.htm" style="white-space: normal;">Connectors</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/application_handlers.htm" style="white-space: normal;">Sync</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/copyright_notice.htm" style="white-space: normal;">Copyright Notice</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/create_amazon_ami_ops.htm" style="white-space: normal;">Create a New Amazon Machine Image (AMI)</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/create_ec2_env_ops.htm" style="white-space: normal;">Create a New EC2 Environment</a></td></tr>
+<tr valign="top"><td class="index1">Custom Portal</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3074.htm" style="white-space: normal;">Custom Portal</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/portal_new_customer_ops.htm" style="white-space: normal;">Portal</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A68" name="A68" style="white-space:normal">D</a></td></tr>
+<tr valign="top"><td class="index1">Default Portal</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3073.htm" style="white-space: normal;">Default Portal</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/portal_new_customer_ops.htm" style="white-space: normal;">Portal</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/define_party_trust_ops.htm" style="white-space: normal;">Defining a Relying Party Trust</a></td></tr>
+<tr valign="top"><td class="index1">Disaster Recovery</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/4463.htm" style="white-space: normal;">Disaster Recovery</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/4468.htm" style="white-space: normal;">High Availability</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/discovery_ops.htm" style="white-space: normal;">Discovery</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A69" name="A69" style="white-space:normal">E</a></td></tr>
+<tr valign="top"><td class="index1">Enable Connectors for Customers</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/application_handlers.htm" style="white-space: normal;">Connectors</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3349.htm" style="white-space: normal;">Enable Connectors for Customers</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3351.htm" style="white-space: normal;">Enable Sync Connectors</a></td></tr>
+<tr valign="top"><td class="index1">Enable Sync Connectors</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/application_handlers.htm" style="white-space: normal;">Connectors</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3351.htm" style="white-space: normal;">Enable Sync Connectors</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/export_public_key_ops.htm" style="white-space: normal;">Export Your Public Key</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A70" name="A70" style="white-space:normal">F</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/features_ops.htm" style="white-space: normal;">Features</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A72" name="A72" style="white-space:normal">H</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/application_handlers.htm" style="white-space: normal;">Handlers - See Connectors</a></td></tr>
+<tr valign="top"><td class="index1">High Availability</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/4463.htm" style="white-space: normal;">Disaster Recovery</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/4468.htm" style="white-space: normal;">High Availability</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/httpbasic_ops.htm" style="white-space: normal;">HTTP Basic Configuration</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/httpdigest_ops.htm" style="white-space: normal;">HTTP Digest Configuration</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A73" name="A73" style="white-space:normal">I</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/IdentityRouter_ops.htm" style="white-space: normal;">Identity Router</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/4456.htm" style="white-space: normal;">Service Status</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/1648.htm" style="white-space: normal;">Identity Router Firewall Setup</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/1649.htm" style="white-space: normal;">Identity Router Static DNS Entries</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/2925.htm" style="white-space: normal;">Identity Router Static Routes</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/IdentityRouter_ops.htm" style="white-space: normal;">Identity Routers</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3078.htm" style="white-space: normal;">IWA Enabled</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3079.htm" style="white-space: normal;">IWA Enabled by IP Networks</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A76" name="A76" style="white-space:normal">L</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/logs_ops.htm" style="white-space: normal;">Logs and System Status</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A77" name="A77" style="white-space:normal">M</a></td></tr>
+<tr valign="top"><td class="index1">Migrate the Identity Router</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/IdentityRouter_ops.htm" style="white-space: normal;">Identity Routers</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3254.htm" style="white-space: normal;">Migrate the Identity Router</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/application_types_ops.htm" style="white-space: normal;">My Application Types</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A78" name="A78" style="white-space:normal">N</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/1768.htm" style="white-space: normal;">Non-Wildcard Certificates</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A80" name="A80" style="white-space:normal">P</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/portal_new_customer_ops.htm" style="white-space: normal;">Portal</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A82" name="A82" style="white-space:normal">R</a></td></tr>
+<tr valign="top"><td class="index1">Refresh Connectors</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/application_handlers.htm" style="white-space: normal;">Connectors</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3350.htm" style="white-space: normal;">Refresh Connectors</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/resources_ops.htm" style="white-space: normal;">Resources</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A83" name="A83" style="white-space:normal">S</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/set_context_ops.htm" style="white-space: normal;">Set Customer Context</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/customers_ops.htm" style="white-space: normal;">Set Up New Customer or Edit Existing Customer</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/idr_hardware_setup_ops.htm" style="white-space: normal;">Set Up the Identity Router</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/SimpleLink.htm" style="white-space: normal;">SimpleLink</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/sso_config_ops.htm" style="white-space: normal;">SSO Configuration</a></td></tr>
+<tr valign="top"><td class="index1">Storage</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/customers_ops.htm" style="white-space: normal;">Set Up New Customer or Edit Existing Customer</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3084.htm" style="white-space: normal;">Storage</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/strong_authentication.htm" style="white-space: normal;">Strong Authentication</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/application_handlers.htm" style="white-space: normal;">Sync - See Connectors</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/system_log_ops.htm" style="white-space: normal;">System Log</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/4456.htm" style="white-space: normal;">System Status—"Health Checks"</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/logs_ops.htm" style="white-space: normal;">System Status—&amp;quot;Health Checks&amp;quot;</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A85" name="A85" style="white-space:normal">U</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/understanding_aws_ops.htm" style="white-space: normal;">Understanding Your New Amazon Web Service Account</a></td></tr>
+<tr valign="top"><td class="index1">User Management</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/customers_ops.htm" style="white-space: normal;">Set Up New Customer or Edit Existing Customer</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3088.htm" style="white-space: normal;">User Management</a></td></tr>
+<tr valign="top"><td class="index1">Using the Report View</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/application_handlers.htm" style="white-space: normal;">Connectors</a></td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/3352.htm" style="white-space: normal;">Using the Report View</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A86" name="A86" style="white-space:normal">V</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/idr_status_ops.htm" style="white-space: normal;">View Identity Router Status</a></td></tr>
+<tr valign="top"><td class="indexheading"><a id="A87" name="A87" style="white-space:normal">W</a></td></tr>
+<tr valign="top"><td class="index1">Web Servers</td></tr>
+<tr valign="top"><td class="indexlink">&nbsp; &nbsp; &nbsp;<a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/portal_new_customer_ops.htm" style="white-space: normal;">Portal Integration</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/windows_auth.htm" style="white-space: normal;">Windows AuthN</a></td></tr>
+<tr valign="top"><td class="indexlink"><a href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/idr_cfs.htm" style="white-space: normal;">Windows Set Up for CIFS</a></td></tr>
+
+</tbody></table>
+
+
+<input id="topicId" value="1026" type="hidden">
+<input id="topicDescription" value="Operations-Guide" type="hidden">
+<input id="footer-modified" value="Last modified: 6/28/2013 4:44:22 PM" type="hidden">
+
+
+</div></div></div><div style="width: 248px;" id="tree-panel" class="x-panel x-panel-noborder x-tree "><div id="ext-gen162" class="x-panel-bwrap"><div style="overflow: auto; width: 238px; height: 793px;" id="ext-gen163" class="x-panel-body x-panel-body-noheader x-panel-body-noborder"><ul id="ext-gen164" class="x-tree-root-ct x-tree-arrows"><div class="x-tree-root-node"><li class="x-tree-node"><div id="ext-gen201" ext:tree-node-id="1" class="x-tree-node-el x-unselectable  x-tree-node-collapsed " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-plus"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#IdentityRouter_ops" tabindex="1"><span style="visibility: visible;" id="ext-gen174" unselectable="on">Identity Routers</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen200" ext:tree-node-id="9" class="x-tree-node-el x-unselectable  x-tree-node-collapsed " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-plus"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#SimpleLink" tabindex="1"><span unselectable="on">SimpleLink</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen254" ext:tree-node-id="12" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#Administrators_ops" tabindex="1"><span unselectable="on">Administrators</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen202" ext:tree-node-id="13" class="x-tree-node-el x-unselectable  x-tree-node-collapsed " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-plus"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#customers_ops" tabindex="1"><span unselectable="on">Set Up New Customer or Edit Existing Customer</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen255" ext:tree-node-id="29" class="x-tree-node-el x-unselectable  x-tree-node-collapsed " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-plus"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#strong_authentication" tabindex="1"><span unselectable="on">Strong Authentication</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen256" ext:tree-node-id="33" class="x-tree-node-el x-unselectable  x-tree-node-expanded " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-minus"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#application_types_ops" tabindex="1"><span unselectable="on">My Application Types</span></a></div><ul class="x-tree-node-ct" style=""><li class="x-tree-node"><div id="ext-gen257" ext:tree-node-id="34" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"><img src="s.gif" class="x-tree-elbow-line"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#httpbasic_ops" tabindex="1"><span unselectable="on">HTTP Basic Configuration</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen258" ext:tree-node-id="35" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"><img src="s.gif" class="x-tree-elbow-line"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#httpdigest_ops" tabindex="1"><span unselectable="on">HTTP Digest Configuration</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen259" ext:tree-node-id="36" class="x-tree-node-el x-unselectable x-tree-node-expanded  x-tree-selected" unselectable="on"><span class="x-tree-node-indent"><img src="s.gif" class="x-tree-elbow-line"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-end-minus"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#discovery_ops" tabindex="1"><span style="visibility: visible;" id="ext-gen211" unselectable="on">Discovery</span></a></div><ul class="x-tree-node-ct" style=""><li class="x-tree-node"><div id="ext-gen260" ext:tree-node-id="37" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"><img src="s.gif" class="x-tree-elbow-line"><img src="s.gif" class="x-tree-icon"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-end"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#custom_forms_ops" tabindex="1"><span style="visibility: visible;" id="ext-gen224" unselectable="on">Add a Custom Form</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li></ul></li></ul></li><li class="x-tree-node"><div id="ext-gen261" ext:tree-node-id="38" class="x-tree-node-el x-unselectable x-tree-node-expanded " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-minus"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#application_handlers" tabindex="1"><span unselectable="on">Connectors</span></a></div><ul class="x-tree-node-ct" style=""><li class="x-tree-node"><div id="ext-gen285" ext:tree-node-id="39" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"><img src="s.gif" class="x-tree-elbow-line"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#3349" tabindex="1"><span unselectable="on">Enable Connectors for Customers</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen286" ext:tree-node-id="40" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"><img src="s.gif" class="x-tree-elbow-line"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#3351" tabindex="1"><span unselectable="on">Enable Sync Connectors</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen287" ext:tree-node-id="41" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"><img src="s.gif" class="x-tree-elbow-line"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#3352" tabindex="1"><span unselectable="on">Using the Report View</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen288" ext:tree-node-id="42" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"><img src="s.gif" class="x-tree-elbow-line"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-end"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#3350" tabindex="1"><span unselectable="on">Refresh Connectors</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li></ul></li><li class="x-tree-node"><div id="ext-gen289" ext:tree-node-id="43" class="x-tree-node-el x-unselectable  x-tree-node-collapsed " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-plus"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#logs_ops" tabindex="1"><span unselectable="on">Logs and System Status</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen290" ext:tree-node-id="47" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#ca_signed_cert_ops" tabindex="1"><span unselectable="on">CA-signed Certificates</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen291" ext:tree-node-id="48" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#1768" tabindex="1"><span unselectable="on">Non-Wildcard Certificates</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen292" ext:tree-node-id="49" class="x-tree-node-el x-unselectable  x-tree-node-collapsed " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-plus"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#amazon_ec2_ops" tabindex="1"><span unselectable="on">Amazon EC2 Identity Router Deployment</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen293" ext:tree-node-id="54" class="x-tree-node-el x-unselectable  x-tree-node-collapsed " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-plus"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#ad_federation_services_ops" tabindex="1"><span unselectable="on">Active Directory Federation Services</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen297" ext:tree-node-id="58" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#4463" tabindex="1"><span unselectable="on">Disaster Recovery</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen296" ext:tree-node-id="59" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#4468" tabindex="1"><span unselectable="on">High Availability</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen295" ext:tree-node-id="60" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#resources_ops" tabindex="1"><span unselectable="on">Resources</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li><li class="x-tree-node"><div id="ext-gen294" ext:tree-node-id="61" class="x-tree-node-el x-tree-node-leaf x-unselectable " unselectable="on"><span class="x-tree-node-indent"></span><img src="s.gif" class="x-tree-ec-icon x-tree-elbow-end"><img src="s.gif" class="x-tree-node-icon" unselectable="on"><a hidefocus="on" class="x-tree-node-anchor" href="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm#copyright_notice" tabindex="1"><span unselectable="on">Copyright Notice</span></a></div><ul class="x-tree-node-ct" style="display: none;"></ul></li></div></ul></div></div></div><div style="width: 248px;" id="extSearchResultsPanel" class="x-panel x-panel-noborder  x-hide-display"><div id="ext-gen207" class="x-panel-bwrap"><div style="overflow: auto; width: 248px; height: 803px;" id="ext-gen208" class="searchResultsPanel"><div id="searchResultsPanel"><div style="visibility: visible;" id="searchMessage"><p id="searchDetails" class="searchDetails">&nbsp;3 result(s) found.<br>(0.007) seconds.</p><br></div><div id="searchResults"><p><table class="searchResults"><tbody><tr><td class="srtd"><a href="#discovery_ops"><span class="searchword1">Discovery</span></a><br>The <span class="searchword1">discovery</span> process in Studio searches a web...<br><br><a href="#application_types_ops">My Application Types</a><br>...Configuration - Configure a digest application.  <span class="searchword1">Discovery</span> - Discover an application and configure the...<br><br><a href="#custom_forms_ops">Add a Custom Form</a><br>...These instructions assume that you have used the <span class="searchword1">Discovery</span> feature and have already completed the initial...<br><br></td></tr></tbody></table></p><p></p></div></div></div></div></div></div><div style="width: 248px;" id="ext-gen42" class="x-tab-panel-footer x-tab-panel-footer-noborder"><div id="ext-gen44" class="x-tab-strip-spacer"></div><div id="ext-gen43" class="x-tab-strip-wrap"><ul id="ext-gen45" class="x-tab-strip x-tab-strip-bottom"><li class=" x-tab-strip-active " id="tab-panel__tree-panel"><a class="x-tab-strip-close" onclick="return false;"></a><a class="x-tab-right" href="#" onclick="return false;"><em class="x-tab-left"><span class="x-tab-strip-inner"><span class="x-tab-strip-text ">Contents</span></span></em></a></li><li class=" " id="tab-panel__index-panel"><a class="x-tab-strip-close" onclick="return false;"></a><a class="x-tab-right" href="#" onclick="return false;"><em class="x-tab-left"><span class="x-tab-strip-inner"><span class="x-tab-strip-text ">Index</span></span></em></a></li><li class="x-tab-strip-closable " id="tab-panel__extSearchResultsPanel"><a class="x-tab-strip-close" onclick="return false;"></a><a class="x-tab-right" href="#" onclick="return false;"><em class="x-tab-left"><span class="x-tab-strip-inner"><span class="x-tab-strip-text ">Search</span></span></em></a></li><li id="ext-gen46" class="x-tab-edge"></li><div id="ext-gen47" class="x-clear"></div></ul></div></div></div></div></div></div></div>
+    
+
+    <!--topic-content-->
+    
+
+    <!-- The configuration section to show/hide icons and use values from Authorit variables -->
+    <div style="display: none;">
+
+        <!-- Print this page icon-->
+        <input id="printIcon" value="false" type="hidden">
+
+        <!-- Send feedback icon -->
+        <input id="sendFeedbackIcon" value="false" type="hidden">
+        <input id="feedbackEmail" value="href=support@symplified.com" type="hidden">
+
+        <!-- Email this page icon -->
+        <input id="emailIcon" value="false" type="hidden">
+        <input id="siteName" value="Customer Help" type="hidden">
+
+        <!-- Edit in Author-it Live icon-->
+        <!--Note: when this icon is enabled it will show only if the browser is Microsoft Internet Explorer 6 and above -->
+        <input id="editLiveIcon" value="false" type="hidden">
+        <input id="liveServer" value="http://webserver/aitlive" type="hidden">
+        <input id="liveServerAlias" value="Authorit" type="hidden">
+
+        <!-- Edit in Author-it icon-->
+        <input id="editIcon" value="false" type="hidden">
+        <input id="sys_library_command_line" value=" /jet&quot;C:\Program Files\Author-it 5\Data\Libraries\Symplified.adl&quot;" type="hidden">
+        <input id="bookId" value="710" type="hidden">
+
+        <!-- Tree navigation arrows icons-->
+        <input id="treeNavigationArrows" value="true" type="hidden">
+
+        <!-- Tree expand all icon, Note: may have slow performance with large table of contents -->
+        <input id="treeExpandAll" value="false" type="hidden">
+        <!-- Tree collaps all icon, Note: may have slow performance with large table of contents -->
+        <input id="treeCollapsAll" value="false" type="hidden">
+
+        <!-- Home icon-->
+        <input id="homeIcon" value="true" type="hidden">
+        <!-- Home Topic-->
+        <input id="homeTopic" value="" type="hidden">
+
+        <!-- Show header-->
+        <input id="showHeader" value="true" type="hidden">
+        
+        <!-- Start with Collapsed West panel -->
+        <input id="collapsedWestPanel" value="false" type="hidden">
+        
+        <!-- West panel width -->
+        <input id="westPanelWidth" value="250" type="hidden">
+        
+        <!-- West panel maximum width limit -->
+        <input id="westPanelMaxWidth" value="400" type="hidden">
+        
+        <!-- West panel minimum width limit -->
+        <input id="westPanelMinWidth" value="190" type="hidden">
+        
+        <!-- Show Match partial words with Search -->
+        <input id="matchPartialWords" value="true" type="hidden">
+        
+        <!-- Set search results to match partial words by default -->
+        <!-- Note: this setting will apply regardless whether the 'Match partial words' showing or not -->
+        <input id="matchPartialWordsInResult" value="false" type="hidden">
+
+    </div>
+
+    <div id="highlightColor"></div>
+    <!-- Fields required for history management -->
+    <form action="https://anavrotskiy-admin.lohika.com/AdminServer/OpsManual/index.htm" id="history-form" class="x-hidden">
+        <input value="discovery_ops" id="x-history-field" type="hidden">
+        <iframe src="index_1.html" id="x-history-frame"></iframe>
+    </form>
+
+
+<div style="position: absolute; z-index: 20000; visibility: hidden; display: none;" id="ext-comp-1001" class="x-tip"><div class="x-tip-tl"><div class="x-tip-tr"><div class="x-tip-tc"><div style="-moz-user-select: none;" id="ext-gen10" class="x-tip-header x-unselectable"><span class="x-tip-header-text"></span></div></div></div></div><div id="ext-gen11" class="x-tip-bwrap"><div class="x-tip-ml"><div class="x-tip-mr"><div class="x-tip-mc"><div style="height: auto;" id="ext-gen12" class="x-tip-body"></div></div></div></div><div class="x-tip-bl x-panel-nofooter"><div class="x-tip-br"><div class="x-tip-bc"></div></div></div></div></div><div style="left: 250px; top: 80px; height: 858px;" class="x-layout-split x-layout-split-west x-splitbar-h" id="westPanelID-xsplit">&nbsp;</div><div class=" x-unselectable x-splitbar-proxy x-splitbar-proxy-h" style="-moz-user-select: none;" id="ext-gen36"></div></body>
+</html>
