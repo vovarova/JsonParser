@@ -13,7 +13,7 @@ class Attribute(n: String, c: Component) extends Component {
   def name = n
   def element = c
   override def toString(): String = {
-    s"$name : ${element.toString()}"
+    s""""$name" : ${element.toString()}"""
   }
 }
 class ObjectComponent() extends Component {
@@ -24,20 +24,34 @@ class ObjectComponent() extends Component {
     b.append("{")
     getAttributes.foreach(x => { b.append(s"${x.toString()} ,") })
     if(getAttributes.size>0){
-      b.setLength(b.length() - 2)
+      b.setLength(b.length - 2)
     }
     b.append("}").toString()
   }
 
 }
 
-class PrimitiveObject(v: String) extends Component {
+class StringPrimitiveObject(v: String) extends Component {
   override def toString(): String = {
-    v
+    s""""$v""""
   }
 
 }
+class IntPrimitiveObject(v: Int) extends Component {
+  override def toString(): String = {
+    v.toString
+  }
+}
+
 class ArrayObject() extends Component {
-  def getAttributes = new MutableList[Component]()
-  //def getAttributes(name:String):Attribute = {getAttributes.
+  val getElements = new MutableList[Component]()
+  override def toString(): String = {
+    val b = StringBuilder.newBuilder
+    b.append("[")
+    getElements.foreach(x => { b.append(s"${x.toString()} ,") })
+    if(getElements.size>0){
+      b.setLength(b.length - 2)
+    }
+    b.append("]").toString()
+  }
 }
