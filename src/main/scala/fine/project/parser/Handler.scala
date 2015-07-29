@@ -18,7 +18,7 @@ object JsonParser {
 }
 
 object HandlerManger {
-  private val handlers = Set(ObjectHandler, StringPrimitiveHanlder,ArrayHandler,IntPrimitiveHanlder)
+  private val handlers = Set(ObjectHandler, StringPrimitiveHanlder,ArrayHandler,IntPrimitiveHanlder,BooleanPrimitiveHanlder)
 
   def getHandler(str: String, position: Int): () => (Component, Int) = {
     val h = handlers.filter { _.handle(str, position) }.head
@@ -209,6 +209,31 @@ object IntPrimitiveHanlder extends Handler {
     }
     val res = builder.toString()
     (new IntPrimitiveObject(res.toInt), currentElement._2)
+  }
+}
+
+object BooleanPrimitiveHanlder extends Handler {
+  private val loop = new Breaks
+  def handle(str: String, pos: Int): Boolean = {
+    Utils.equalsElements(Utils.getNextElement(str, pos)._1,"t") | Utils.equalsElements(Utils.getNextElement(str, pos)._1,"f")
+  }
+
+  def process(str: String, pos: Int): (Component, Int) = {
+    val builder = StringBuilder.newBuilder
+    var currentElement = Utils.getNextElement(str, pos)
+    loop.breakable {
+      while (currentElement._1.isLetter) {
+        builder.append(currentElement._1)
+        val nextPosition = currentElement._2 + 1
+        if (Utils.isEnd(str, nextPosition)) {
+          sys.error("No \"")
+          loop.break()
+        }
+        currentElement = (str.charAt(nextPosition), nextPosition)
+      }
+    }
+    val res = builder.toString()
+    (new BooleanPrimitiveObject(res.toBoolean), currentElement._2)
   }
 }
 

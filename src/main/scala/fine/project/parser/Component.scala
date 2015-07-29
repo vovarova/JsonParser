@@ -42,6 +42,11 @@ class IntPrimitiveObject(v: Int) extends Component {
     v.toString
   }
 }
+class BooleanPrimitiveObject(v: Boolean) extends Component {
+  override def toString(): String = {
+    v.toString
+  }
+}
 
 class ArrayObject() extends Component {
   val getElements = new MutableList[Component]()

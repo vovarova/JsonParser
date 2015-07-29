@@ -3,13 +3,18 @@ package fine.project.parser
 /**
  * @author Vroman
  */
+
+import java.io.InputStream
+
 import scala.io.Source
 object T {
   def main(args: Array[String]): Unit = {
 
-    val filename = "D:/test.js"
+    val filename = "/test.json"
+
+    val stream : InputStream = getClass.getResourceAsStream(filename)
     val b = StringBuilder.newBuilder
-    for (line <- Source.fromFile(filename).getLines()) {
+    for (line <- Source.fromInputStream(stream).getLines()) {
       b append line
     }
     val str = b.toString()
